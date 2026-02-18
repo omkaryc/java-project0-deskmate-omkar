@@ -38,11 +38,11 @@ public class AppConfig {
         return new BookingController(bookingService);
     }
 
-//    public ReportController reportController() {
-//        ReportDao reportDao = new JdbcReportDao();
-//        ReportService reportService = new ReportService(reportDao);
-//        return new ReportController(reportService);
-//    }
+    public ReportController reportController() {
+        ReportDao reportDao = new JdbcReportDao();
+        ReportService reportService = new ReportService(reportDao);
+        return new ReportController(reportService);
+    }
 
 }
 
