@@ -38,14 +38,14 @@ public class App {
 
                 int c = InputUtil.readInt("Choose: ");
 
-//                switch (c) {
-//
-//                    case 1:
-//                        if (role != Role.ADMIN)
-//                            System.out.println("Access denied.");
-//                        else
-//                            cfg.deskController().menu();
-//                        break;
+                switch (c) {
+
+                    case 1:
+                        if (role != Role.ADMIN)
+                            System.out.println("Access denied.");
+                        else
+                            cfg.deskController().menu();
+                        break;
 //
 //                    case 2:
 //                        cfg.bookingController().menu();
@@ -60,9 +60,9 @@ public class App {
 //                        System.out.println("Bye!");
 //                        return;
 //
-//                    default:
-//                        System.out.println("Invalid option.");
-//                }
+                    default:
+                        System.out.println("Invalid option.");
+                }
 
             } catch (ValidationException | EntityNotFoundException | DoubleBookingException e) {
 
