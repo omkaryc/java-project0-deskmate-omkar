@@ -47,19 +47,19 @@ public class App {
                             cfg.deskController().menu();
                         break;
 //
-//                    case 2:
-//                        cfg.bookingController().menu();
-//                        break;
-//
+                    case 2:
+                        cfg.bookingController().menu();
+                        break;
+
 //                    case 3:
 //                        cfg.reportController().menu();
 //                        break;
-//
-//                    case 0:
-//                        log.info("DeskMate stopped by user=" + user);
-//                        System.out.println("Bye!");
-//                        return;
-//
+
+                    case 0:
+                        log.info("DeskMate stopped by user=" + user);
+                        System.out.println("Bye!");
+                        return;
+
                     default:
                         System.out.println("Invalid option.");
                 }
